@@ -1,6 +1,6 @@
 package Prototype.Experiments.AST;
 
-public enum LiteralTypes {
+public enum literalTypes {
     INTEGER("int"),
     STRING("String"),
     CHAR("char"), 
@@ -10,7 +10,7 @@ public enum LiteralTypes {
 
     private String stringType;
 
-    private LiteralTypes(String stringType) {
+    private literalTypes(String stringType) {
         this.stringType = stringType;
     }
 
