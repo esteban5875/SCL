@@ -1,6 +1,6 @@
 package Prototype.Experiments.AST;
 
-public enum literalTypes {
+public enum literalTypes { //Valid Types Enum
     INTEGER("int"),
     STRING("String"),
     CHAR("char"), 
@@ -10,7 +10,7 @@ public enum literalTypes {
 
     private String stringType;
 
-    private literalTypes(String stringType) {
+    private literalTypes(String stringType) { //Constructor
         this.stringType = stringType;
     }
 
@@ -19,7 +19,7 @@ public enum literalTypes {
         return stringType;
     }
 
-    public Class<?> boxedClass() {
+    public Class<?> boxedClass() { //Map Enum objects to type classes
         return switch (this) {
             case INTEGER -> Integer.class;
             case BOOL    -> Boolean.class;
